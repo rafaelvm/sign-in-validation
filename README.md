@@ -1,1 +1,1 @@
-# sign-in-validation
+Validação de página de login com JavaScript.
