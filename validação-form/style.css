@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    height: 100vh;
+}
+
+.leftside {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.leftside img {
+    width: 65%;
+    height: auto;
+}
+
+.leftside a {
+    position: absolute;
+    bottom: 5%;
+    right: 55%;
+    text-decoration: none;
+    color: #4c5b60;
+    
+}
+.rigthside {
+    width: 400px;
+    background-color: rgba(90, 228, 168, 0.4);
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 3rem;
+}
+
+.campo {
+    margin-bottom: 3rem; 
+}
+
+.campo input {
+    background-color: rgba(90, 228, 168, 0);
+    width: 200px;
+}
+
+.campo input[type="email"], input[type="password"] {
+    border: none;
+    border-bottom: 3px solid #5ae4a8;
+    height: 1rem;
+    padding: 0.5rem;
+    outline: none;
+
+}
+
+::placeholder {
+    font-size: 15px;
+    padding: 0.3rem;
+    color: #4c5b60;
+    font-weight: bolder;
+}
+
+.campo input[type="submit"] {
+    border: 2px solid #5ae4a8;
+    border-radius: 5px;
+    background: rgba(90, 228, 168, 0);
+    cursor: pointer;
+    margin-top: 1rem;
+    height: 2.5rem;
+    width: 215px;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.campo input[type="submit"]:hover {
+    background: #4c5b60;
+    transition: 0.4s;
+    color:  #fff;
+}
+
+.error {
+    font-size: 11px;
+    background-color: red;
+    color:  #fff;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+@media (max-width: 820px){
+    .leftside {
+        display: none;
+    }
+    
+    .rigthside {
+        width: 100%;
+    }
+}

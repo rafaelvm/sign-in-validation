@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="card">
+            <div class="leftside">
+                <img src="./assets/web.jpg" alt="Web">
+                <a href="https://br.freepik.com/vetores/trabalho">Trabalho vetor criado por stories - br.freepik.com</a>
+            </div>
+            
+            <div class="rigthside"> 
+                <form action="" method="POST" class="validator">
+                    <h1>Faça seu Login</h1>
+                        
+                    <div class="campo">
+                        <label for=""></label>
+                        <input type="email" name="email" placeholder="Email" data-rules="required|email">
+                    </div>
+
+                    <div class="campo">
+                        <label for="password"></label>
+                        <input type="password" name="password" placeholder="Senha" data-rules="required|min=4">
+                    </div>
+
+                    <div class="campo">
+                        <input type="submit" value="Entrar">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
